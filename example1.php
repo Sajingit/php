@@ -92,7 +92,6 @@ echo serialize($foo);
 
 print_r($_SERVER);
 ?>
-<<<<<<< HEAD
 
 #############################################################################################
 
@@ -130,12 +129,6 @@ echo $$a;
 
 
 ######################################################################################################
-=======
-<form action="" method="POST">
-<input type="text" value="1" name="name">	
-<input type="submit">
-</form>
->>>>>>> da5939ffd3684d4fc9371ebc80416d43b8e8454a
 
 .....................................................................................................................
 
@@ -170,14 +163,34 @@ it will not be included again.
 
 
 
+<?php
+
+echo"<br >";echo"<br >";echo"<br >";echo"<br >";
+
+$GLOBALS = array('data' => 'Sajin Global Data' );
+class test{
+
+    public function __construct(){
+
+    }
+    public function getGlobalData(){
+        $this->globalData = $GLOBALS['data'];
+    }
+
+
+}
+
+$obj = new test();
+$obj->getGlobalData();
 
 
 
 
 
-<<<<<<< HEAD
+
+?>
 
 
 
-=======
->>>>>>> da5939ffd3684d4fc9371ebc80416d43b8e8454a
+
+
